@@ -7,7 +7,7 @@ export default function Hero() {
   return (
     <section
       id="inicio"
-      className="relative min-h-screen flex items-center justify-center overflow-hidden"
+      className="relative flex items-center justify-center overflow-hidden py-28 sm:py-36"
     >
       {/* Background */}
       <div className="absolute inset-0 hero-spotlight" />
