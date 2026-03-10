@@ -186,23 +186,34 @@ body {
   box-shadow: 0 0 10px rgba(255, 68, 68, 0.6);
 }
 
-/* Glass card */
+/* Luminous card — bright frosted glass on dark blue */
 .glass-card {
   background: linear-gradient(
-    135deg,
-    rgba(26, 117, 207, 0.3) 0%,
-    rgba(13, 91, 168, 0.5) 100%
+    160deg,
+    rgba(255, 255, 255, 0.15) 0%,
+    rgba(207, 239, 254, 0.08) 100%
   );
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
-  border: 1px solid rgba(207, 239, 254, 0.1);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow:
+    0 8px 32px rgba(0, 0, 0, 0.12),
+    inset 0 1px 0 rgba(255, 255, 255, 0.15);
   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .glass-card:hover {
-  border-color: rgba(254, 214, 46, 0.3);
-  transform: translateY(-4px);
-  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3), 0 0 30px rgba(254, 214, 46, 0.1);
+  background: linear-gradient(
+    160deg,
+    rgba(255, 255, 255, 0.22) 0%,
+    rgba(207, 239, 254, 0.12) 100%
+  );
+  border-color: rgba(254, 214, 46, 0.5);
+  transform: translateY(-6px);
+  box-shadow:
+    0 24px 64px rgba(0, 0, 0, 0.2),
+    0 0 40px rgba(254, 214, 46, 0.08),
+    inset 0 1px 0 rgba(255, 255, 255, 0.2);
 }
 
 /* Noise texture overlay */

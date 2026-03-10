@@ -85,11 +85,11 @@ export default function Sobre() {
                 }`}
                 style={{ transitionDelay: `${400 + i * 150}ms` }}
               >
-                <div className={`inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-gradient-to-br ${platform.color} mb-5 group-hover:scale-110 transition-transform duration-300`}>
-                  <platform.icon className="w-7 h-7 text-ice" />
+                <div className="inline-flex items-center justify-center w-14 h-14 rounded-xl bg-gold shadow-[0_4px_16px_rgba(254,214,46,0.3)] mb-5 group-hover:scale-110 group-hover:shadow-[0_6px_24px_rgba(254,214,46,0.5)] transition-all duration-300">
+                  <platform.icon className="w-6 h-6 text-[#03254F]" />
                 </div>
-                <h3 className="text-white font-semibold text-lg mb-2">{platform.name}</h3>
-                <p className="text-white/70 text-sm font-light">{platform.desc}</p>
+                <h3 className="text-white font-bold text-lg mb-2">{platform.name}</h3>
+                <p className="text-white/80 text-sm">{platform.desc}</p>
               </Wrapper>
             );
           })}

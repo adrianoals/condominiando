@@ -78,15 +78,15 @@ export default function Comunidade() {
               }`}
               style={{ transitionDelay: `${300 + i * 150}ms` }}
             >
-              <div className={`inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-gradient-to-br ${item.iconBg} mb-5 group-hover:scale-110 transition-transform duration-300`}>
-                <item.icon className={`w-7 h-7 ${item.iconColor} transition-colors duration-300`} />
+              <div className="inline-flex items-center justify-center w-14 h-14 rounded-xl bg-gold shadow-[0_4px_16px_rgba(254,214,46,0.3)] mb-5 group-hover:scale-110 group-hover:shadow-[0_6px_24px_rgba(254,214,46,0.5)] transition-all duration-300">
+                <item.icon className="w-6 h-6 text-[#03254F] transition-colors duration-300" />
               </div>
 
-              <h3 className="text-white font-semibold text-lg mb-1">{item.name}</h3>
-              <p className="text-white/60 text-sm mb-3">{item.handle}</p>
-              <p className="text-white/80 text-sm font-light mb-5">{item.desc}</p>
+              <h3 className="text-white font-bold text-lg mb-1">{item.name}</h3>
+              <p className="text-white/70 text-sm mb-3">{item.handle}</p>
+              <p className="text-white/90 text-sm mb-5">{item.desc}</p>
 
-              <span className="inline-flex items-center gap-1.5 text-gold/70 text-sm font-medium group-hover:text-gold transition-colors duration-300">
+              <span className="inline-flex items-center gap-1.5 text-gold text-sm font-semibold group-hover:text-gold transition-colors duration-300">
                 Acessar
                 <ArrowRightIcon className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform duration-300" />
               </span>

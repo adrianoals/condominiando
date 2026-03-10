@@ -43,14 +43,14 @@ export default function Patrocinadores() {
               style={{ transitionDelay: `${400 + i * 100}ms` }}
             >
               <div className="text-center">
-                <div className="w-16 h-16 rounded-xl bg-ice/5 border border-dashed border-ice/15 mx-auto mb-3 flex items-center justify-center group-hover:border-gold/30 transition-colors duration-300">
-                  <svg className="w-6 h-6 text-ice/20 group-hover:text-gold/40 transition-colors duration-300" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
+                <div className="w-14 h-14 rounded-xl bg-gold/20 border border-dashed border-gold/30 mx-auto mb-3 flex items-center justify-center group-hover:bg-gold/30 group-hover:border-gold/50 transition-all duration-300">
+                  <svg className="w-6 h-6 text-gold/50 group-hover:text-gold/80 transition-colors duration-300" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
                     <rect x="3" y="3" width="18" height="18" rx="2" />
                     <circle cx="8.5" cy="8.5" r="1.5" />
                     <path d="m21 15-5-5L5 21" />
                   </svg>
                 </div>
-                <span className="text-ice/20 text-xs font-light">Em breve</span>
+                <span className="text-white/40 text-xs">Em breve</span>
               </div>
             </div>
           ))}
@@ -59,7 +59,7 @@ export default function Patrocinadores() {
         {/* CTA */}
         <div className={`text-center transition-all duration-1000 delay-500 ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`} id="contato">
           <div className="glass-card inline-block rounded-2xl px-10 py-8 max-w-lg">
-            <p className="text-white text-lg font-medium mb-2">
+            <p className="text-white text-lg font-bold mb-2">
               Quer ser patrocinador?
             </p>
             <p className="text-white/70 text-sm font-light mb-6">

@@ -8,13 +8,13 @@ export default function SectionTitle({ title, subtitle, align = "center" }: Sect
   return (
     <div className={`mb-14 ${align === "center" ? "text-center" : "text-left"}`}>
       <h2
-        className="text-3xl sm:text-4xl lg:text-[2.75rem] font-bold text-ice tracking-tight leading-tight mb-3"
+        className="text-3xl sm:text-4xl lg:text-[2.75rem] font-bold text-white tracking-tight leading-tight mb-3"
         style={{ fontFamily: "'Sora', sans-serif" }}
       >
         {title}
       </h2>
       {subtitle && (
-        <p className="text-ice/60 text-base sm:text-lg font-light max-w-2xl mx-auto">
+        <p className="text-white/75 text-base sm:text-lg font-light max-w-2xl mx-auto">
           {subtitle}
         </p>
       )}
