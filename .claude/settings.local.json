@@ -1,0 +1,22 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:www.youtube.com)",
+      "WebFetch(domain:www.instagram.com)",
+      "WebSearch",
+      "Bash(npx create-next-app@latest website --typescript --tailwind --eslint --app --src-dir --no-import-alias --use-npm 2>&1 | tail -5)",
+      "Bash(mkdir -p /Users/adriano/Desktop/Condominiando/website/public/images && cp /Users/adriano/Desktop/Condominiando/logo-2026/logo1.png /Users/adriano/Desktop/Condominiando/website/public/images/ && cp /Users/adriano/Desktop/Condominiando/logo-2026/logo-icone-transparente.png /Users/adriano/Desktop/Condominiando/website/public/images/ && cp /Users/adriano/Desktop/Condominiando/logo-2026/logo-icone.png /Users/adriano/Desktop/Condominiando/website/public/images/ && cp /Users/adriano/Desktop/Condominiando/logo-2026/logo2.png /Users/adriano/Desktop/Condominiando/website/public/images/)",
+      "Bash(cd /Users/adriano/Desktop/Condominiando/website && npm run build 2>&1 | tail -30)",
+      "Bash(npm run:*)",
+      "Bash(cd /Users/adriano/Desktop/Condominiando/website/public && sips -z 180 180 /Users/adriano/Desktop/Condominiando/logo-2026/logo-icone.png --out apple-touch-icon.png 2>&1 && sips -z 32 32 /Users/adriano/Desktop/Condominiando/logo-2026/logo-icone.png --out favicon-32x32.png 2>&1 && sips -z 16 16 /Users/adriano/Desktop/Condominiando/logo-2026/logo-icone.png --out favicon-16x16.png 2>&1 && sips -z 192 192 /Users/adriano/Desktop/Condominiando/logo-2026/logo-icone.png --out icon-192.png 2>&1 && sips -z 512 512 /Users/adriano/Desktop/Condominiando/logo-2026/logo-icone.png --out icon-512.png 2>&1)",
+      "Bash(sips -s format ico favicon-32x32.png --out favicon.ico 2>&1 || cp favicon-32x32.png favicon.ico)",
+      "Bash(lsof -ti:3000 | xargs kill 2>/dev/null; echo \"done\")",
+      "Bash(cd /Users/adriano/Desktop/Condominiando/website/public && sips -z 32 32 /Users/adriano/Desktop/Condominiando/logo-2026/logo-icone-transparente.png --out favicon-32x32.png 2>&1 && sips -z 16 16 /Users/adriano/Desktop/Condominiando/logo-2026/logo-icone-transparente.png --out favicon-16x16.png 2>&1 && sips -s format ico favicon-32x32.png --out favicon.ico 2>&1 && sips -z 180 180 /Users/adriano/Desktop/Condominiando/logo-2026/logo-icone-transparente.png --out apple-touch-icon.png 2>&1 && sips -z 192 192 /Users/adriano/Desktop/Condominiando/logo-2026/logo-icone-transparente.png --out icon-192.png 2>&1 && sips -z 512 512 /Users/adriano/Desktop/Condominiando/logo-2026/logo-icone-transparente.png --out icon-512.png 2>&1 && cp favicon.ico /Users/adriano/Desktop/Condominiando/website/src/app/favicon.ico)",
+      "Bash(sips -z 32 32 images/logo-icone.png --out favicon-32x32.png 2>&1 && sips -z 16 16 images/logo-icone.png --out favicon-16x16.png 2>&1 && sips -s format ico favicon-32x32.png --out favicon.ico 2>&1 && sips -z 180 180 images/logo-icone.png --out apple-touch-icon.png 2>&1 && sips -z 192 192 images/logo-icone.png --out icon-192.png 2>&1 && sips -z 512 512 images/logo-icone.png --out icon-512.png 2>&1 && cp favicon.ico /Users/adriano/Desktop/Condominiando/website/src/app/favicon.ico)",
+      "Bash(sips -g pixelWidth -g pixelHeight /Users/adriano/Desktop/Condominiando/logo-2026/logo-icone-transparente.png 2>&1)",
+      "Bash(sips -c 750 750 /Users/adriano/Desktop/Condominiando/logo-2026/logo-icone-transparente.png --out favicon-cropped.png 2>&1)",
+      "Bash(sips -z 32 32 favicon-cropped.png --out favicon-32x32.png 2>&1 && sips -z 16 16 favicon-cropped.png --out favicon-16x16.png 2>&1 && sips -s format ico favicon-32x32.png --out favicon.ico 2>&1 && sips -z 180 180 favicon-cropped.png --out apple-touch-icon.png 2>&1 && sips -z 192 192 favicon-cropped.png --out icon-192.png 2>&1 && sips -z 512 512 favicon-cropped.png --out icon-512.png 2>&1 && cp favicon.ico /Users/adriano/Desktop/Condominiando/website/src/app/favicon.ico && rm favicon-cropped.png)",
+      "Bash(npm install:*)"
+    ]
+  }
+}
