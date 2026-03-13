@@ -16,7 +16,8 @@
       "Bash(sips -g pixelWidth -g pixelHeight /Users/adriano/Desktop/Condominiando/logo-2026/logo-icone-transparente.png 2>&1)",
       "Bash(sips -c 750 750 /Users/adriano/Desktop/Condominiando/logo-2026/logo-icone-transparente.png --out favicon-cropped.png 2>&1)",
       "Bash(sips -z 32 32 favicon-cropped.png --out favicon-32x32.png 2>&1 && sips -z 16 16 favicon-cropped.png --out favicon-16x16.png 2>&1 && sips -s format ico favicon-32x32.png --out favicon.ico 2>&1 && sips -z 180 180 favicon-cropped.png --out apple-touch-icon.png 2>&1 && sips -z 192 192 favicon-cropped.png --out icon-192.png 2>&1 && sips -z 512 512 favicon-cropped.png --out icon-512.png 2>&1 && cp favicon.ico /Users/adriano/Desktop/Condominiando/website/src/app/favicon.ico && rm favicon-cropped.png)",
-      "Bash(npm install:*)"
+      "Bash(npm install:*)",
+      "Bash(lsof -i :3000 -sTCP:LISTEN 2>/dev/null | head -5)"
     ]
   }
 }

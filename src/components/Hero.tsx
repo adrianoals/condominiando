@@ -7,14 +7,14 @@ export default function Hero() {
   return (
     <section
       id="inicio"
-      className="relative flex items-center justify-center overflow-hidden py-28 sm:py-36"
+      className="relative flex items-center justify-center overflow-hidden pt-[142px] pb-16 sm:pb-20"
     >
       {/* Background */}
       <div className="absolute inset-0 hero-spotlight" />
       <div className="absolute inset-0 noise-overlay" />
 
       {/* Content */}
-      <div className="relative z-10 flex flex-col items-center text-center px-4 sm:px-6 pt-24 pb-16 max-w-4xl mx-auto">
+      <div className="relative z-10 flex flex-col items-center text-center px-4 sm:px-6 pt-0 pb-16 max-w-4xl mx-auto">
         {/* Logo */}
         <div className="relative mb-2 opacity-0 animate-scale-in">
           <div className="absolute inset-0 blur-3xl bg-gold/10 rounded-full scale-110" />
@@ -24,6 +24,7 @@ export default function Hero() {
             width={550}
             height={550}
             className="relative drop-shadow-[0_20px_60px_rgba(0,0,0,0.5)] animate-float w-[340px] h-[340px] sm:w-[480px] sm:h-[480px] lg:w-[550px] lg:h-[550px]"
+            style={{ marginTop: "-20px", marginBottom: "10px" }}
             priority
           />
         </div>
