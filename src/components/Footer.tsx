@@ -5,7 +5,7 @@ const quickLinks = [
   { label: "Início", href: "#inicio" },
   { label: "O Programa", href: "#programa" },
   { label: "Assista", href: "#assista" },
-  { label: "Patrocinadores", href: "#patrocinadores" },
+  { label: "Apoiadores", href: "#apoiadores" },
 ];
 
 const socialLinks = [

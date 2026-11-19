@@ -9,12 +9,14 @@ const platforms = [
     icon: TvIcon,
     name: "Nova TV Alto Tietê",
     desc: "Canal aberto na região do Alto Tietê",
+    href: "https://www.youtube.com/playlist?list=PL8pGApzVLHk7b82Abgqo_5jmSlrq5ziF2",
     color: "from-blue-light/20 to-blue-mid/10",
   },
   {
     icon: StreamIcon,
     name: "RedFox Play",
     desc: "Streaming ao vivo pela plataforma digital",
+    // TODO: link do app RedFox Play (pedir ao Rafael)
     color: "from-red-500/15 to-blue-mid/10",
   },
   {
@@ -61,7 +63,7 @@ export default function Sobre() {
             síndicos, moradores e profissionais da área condominial.
           </p>
           <p className="text-white/90 text-base sm:text-lg leading-relaxed font-light mt-5">
-            Transmitido ao vivo toda terça-feira às 20h pela{" "}
+            Transmitido ao vivo toda segunda-feira às 20h pela{" "}
             <span className="text-gold font-semibold">Nova TV Alto Tietê</span> e pela plataforma{" "}
             <span className="text-gold font-semibold">RedFox Play</span>, o Condominiando também está
             disponível no YouTube para quem quiser assistir quando e onde quiser.

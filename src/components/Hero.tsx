@@ -41,7 +41,7 @@ export default function Hero() {
         <div className="opacity-0 animate-fade-in-up delay-300 mb-5" style={{ animationFillMode: "forwards" }}>
           <div className="live-badge inline-flex items-center gap-3 pl-6 pr-5 py-2.5 rounded-full border border-ice/15 bg-white/5 backdrop-blur-sm">
             <span className="text-ice/90 text-sm font-medium tracking-wide">
-              Toda terça-feira, ao vivo, às 20h
+              Toda segunda-feira, ao vivo, às 20h
             </span>
           </div>
         </div>

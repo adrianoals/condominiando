@@ -42,7 +42,7 @@ export default function Assista() {
 
             <div className="relative youtube-embed border border-ice/10 rounded-2xl overflow-hidden">
               <iframe
-                src="https://www.youtube.com/embed/videoseries?list=PL8pGApzVLHk7b82Abgqo_5jmSlrq5ziF2"
+                src="https://www.youtube.com/embed/videoseries?list=UUeG1B1M1pZHfL9ltmmcgsPw"
                 title="Condominiando - Episódios"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen

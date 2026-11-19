@@ -8,7 +8,7 @@ const navLinks = [
   { label: "Início", href: "#inicio" },
   { label: "O Programa", href: "#programa" },
   { label: "Assista", href: "#assista" },
-  { label: "Patrocinadores", href: "#patrocinadores" },
+  { label: "Apoiadores", href: "#apoiadores" },
   { label: "Contato", href: "#contato" },
 ];
 
@@ -38,6 +38,7 @@ export default function Header() {
   }, [mobileOpen]);
 
   return (
+    <>
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
         scrolled
@@ -98,10 +99,12 @@ export default function Header() {
           {mobileOpen ? <CloseIcon /> : <MenuIcon />}
         </button>
       </div>
+    </header>
 
-      {/* Mobile Menu */}
+      {/* Mobile Menu — fora do <header>: o backdrop-blur do header vira containing block
+          de elementos fixed e o menu ficava preso à altura da barra, sobreposto ao conteúdo. */}
       {mobileOpen && (
-        <div className="lg:hidden fixed inset-0 top-0 bg-[#084B8E]/98 backdrop-blur-2xl z-40 animate-fade-in">
+        <div className="lg:hidden fixed inset-0 bg-[#084B8E] z-40 animate-fade-in">
           <div className="flex flex-col items-center justify-center min-h-screen gap-6 px-8">
             <Image
               src="/images/logo-icone-transparente.png"
@@ -138,6 +141,6 @@ export default function Header() {
           </div>
         </div>
       )}
-    </header>
+    </>
   );
 }

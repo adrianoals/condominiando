@@ -2,7 +2,7 @@ import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import Sobre from "@/components/Sobre";
 import Assista from "@/components/Assista";
-import Patrocinadores from "@/components/Patrocinadores";
+import Apoiadores from "@/components/Apoiadores";
 import Comunidade from "@/components/Comunidade";
 import Footer from "@/components/Footer";
 
@@ -14,7 +14,7 @@ export default function Home() {
         <Hero />
         <Sobre />
         <Assista />
-        <Patrocinadores />
+        <Apoiadores />
         <Comunidade />
       </main>
       <Footer />

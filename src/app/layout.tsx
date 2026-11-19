@@ -4,7 +4,7 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "Condominiando com Rafael Zanin | O programa que desvenda o universo condominial",
   description:
-    "Condominiando é um programa apresentado por Rafael Zanin, dedicado ao universo dos condomínios. Ao vivo toda terça-feira às 20h pela Nova TV Alto Tietê e YouTube.",
+    "Condominiando é um programa apresentado por Rafael Zanin, dedicado ao universo dos condomínios. Ao vivo toda segunda-feira às 20h pela Nova TV Alto Tietê e YouTube.",
   keywords: ["condomínio", "síndico", "Rafael Zanin", "Condominiando", "Nova TV Alto Tietê", "gestão condominial"],
   icons: {
     icon: [
@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   manifest: "/site.webmanifest",
   openGraph: {
     title: "Condominiando com Rafael Zanin",
-    description: "O programa que desvenda o universo condominial. Ao vivo toda terça-feira às 20h.",
+    description: "O programa que desvenda o universo condominial. Ao vivo toda segunda-feira às 20h.",
     type: "website",
     locale: "pt_BR",
     images: [{ url: "/images/logo1.png", width: 800, height: 800, alt: "Condominiando" }],
