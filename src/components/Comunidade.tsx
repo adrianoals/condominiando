@@ -2,7 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 import SectionTitle from "./SectionTitle";
-import { YouTubeIcon, InstagramIcon, WhatsAppIcon, ArrowRightIcon } from "./Icons";
+import { YouTubeIcon, InstagramIcon, WhatsAppIcon, SpotifyIcon, ArrowRightIcon } from "./Icons";
 
 const communities = [
   {
@@ -14,6 +14,16 @@ const communities = [
     accent: "hover:border-red-500/40",
     iconBg: "from-red-500/20 to-red-700/10",
     iconColor: "text-red-400 group-hover:text-red-300",
+  },
+  {
+    icon: SpotifyIcon,
+    name: "Spotify",
+    handle: "Podcast",
+    desc: "Ouça os episódios onde estiver",
+    href: "https://open.spotify.com/show/1QgGqT9ymCM0Pr6R9GRul2",
+    accent: "hover:border-green-500/40",
+    iconBg: "from-green-500/20 to-green-700/10",
+    iconColor: "text-green-400 group-hover:text-green-300",
   },
   {
     icon: InstagramIcon,
@@ -66,7 +76,7 @@ export default function Comunidade() {
           />
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-4xl mx-auto">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {communities.map((item, i) => (
             <a
               key={item.name}

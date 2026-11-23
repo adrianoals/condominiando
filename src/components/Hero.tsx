@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { PlayIcon, ArrowRightIcon } from "./Icons";
+import { PlayIcon, ArrowRightIcon, SpotifyIcon } from "./Icons";
 
 export default function Hero() {
   return (
@@ -47,7 +47,7 @@ export default function Hero() {
         </div>
 
         {/* CTAs */}
-        <div className="flex flex-col sm:flex-row gap-4 opacity-0 animate-fade-in-up delay-400" style={{ animationFillMode: "forwards" }}>
+        <div className="flex flex-col sm:flex-row sm:flex-wrap sm:justify-center gap-4 opacity-0 animate-fade-in-up delay-400" style={{ animationFillMode: "forwards" }}>
           <a
             href="https://www.youtube.com/@condominiando"
             target="_blank"
@@ -65,6 +65,15 @@ export default function Hero() {
           >
             Assista na Nova TV Alto Tietê
             <ArrowRightIcon className="w-4 h-4" />
+          </a>
+          <a
+            href="https://open.spotify.com/show/1QgGqT9ymCM0Pr6R9GRul2"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn-outline inline-flex items-center justify-center gap-2.5 px-8 py-3.5 rounded-full text-base"
+          >
+            <SpotifyIcon className="w-5 h-5 text-[#1DB954]" />
+            Ouça no Spotify
           </a>
         </div>
       </div>
