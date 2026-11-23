@@ -299,3 +299,8 @@ body {
   transform: translateY(-2px);
   box-shadow: 0 8px 30px rgba(254, 214, 46, 0.15);
 }
+
+.episode-list {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(254, 214, 46, 0.5) transparent;
+}
