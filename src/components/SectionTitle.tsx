@@ -6,7 +6,7 @@ interface SectionTitleProps {
 
 export default function SectionTitle({ title, subtitle, align = "center" }: SectionTitleProps) {
   return (
-    <div className={`mb-14 ${align === "center" ? "text-center" : "text-left"}`}>
+    <div className={`mb-10 ${align === "center" ? "text-center" : "text-left"}`}>
       <h2
         className="text-3xl sm:text-4xl lg:text-[2.75rem] font-bold text-white tracking-tight leading-tight mb-3"
         style={{ fontFamily: "'Sora', sans-serif" }}

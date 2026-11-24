@@ -14,7 +14,7 @@ export default function Hero() {
       <div className="absolute inset-0 noise-overlay" />
 
       {/* Content */}
-      <div className="relative z-10 flex flex-col items-center text-center px-4 sm:px-6 pt-0 pb-16 max-w-4xl mx-auto">
+      <div className="relative z-10 flex flex-col items-center text-center px-4 sm:px-6 pt-0 pb-8 max-w-4xl mx-auto">
         {/* Logo */}
         <div className="relative mb-2 opacity-0 animate-scale-in">
           <div className="absolute inset-0 blur-3xl bg-gold/10 rounded-full scale-110" />

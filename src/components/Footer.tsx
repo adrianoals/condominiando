@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { YouTubeIcon, InstagramIcon, WhatsAppIcon } from "./Icons";
+import { YouTubeIcon, InstagramIcon, WhatsAppIcon, SpotifyIcon } from "./Icons";
 
 const quickLinks = [
   { label: "Início", href: "#inicio" },
@@ -12,6 +12,7 @@ const socialLinks = [
   { icon: YouTubeIcon, href: "https://www.youtube.com/@condominiando/streams", label: "YouTube" },
   { icon: InstagramIcon, href: "https://www.instagram.com/programacondominiando", label: "Instagram" },
   { icon: WhatsAppIcon, href: "https://whatsapp.com/channel/0029Vb6i8ebFi8xhrvh0yd1d", label: "WhatsApp" },
+  { icon: SpotifyIcon, href: "https://open.spotify.com/show/1QgGqT9ymCM0Pr6R9GRul2", label: "Spotify" },
 ];
 
 export default function Footer() {

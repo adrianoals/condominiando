@@ -52,7 +52,7 @@ export default function Sobre() {
     <section
       id="programa"
       ref={sectionRef}
-      className="relative py-24 sm:py-32"
+      className="relative py-16 sm:py-20"
       style={{ background: "linear-gradient(180deg, #0D5BA8 0%, #084B8E 50%, #0D5BA8 100%)" }}
     >
       <div className="absolute inset-0 noise-overlay" />
@@ -62,7 +62,7 @@ export default function Sobre() {
           <SectionTitle title="Sobre o Programa" />
         </div>
 
-        <div className={`max-w-3xl mx-auto text-center mb-16 transition-all duration-1000 delay-200 ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}>
+        <div className={`max-w-3xl mx-auto text-center mb-12 transition-all duration-1000 delay-200 ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}>
           <p className="text-white/90 text-base sm:text-lg leading-relaxed font-light">
             O <span className="text-gold font-semibold">Condominiando</span> é um programa apresentado por{" "}
             <span className="text-gold font-semibold">Rafael Zanin</span>, dedicado ao universo dos

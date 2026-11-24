@@ -9,8 +9,12 @@ export const EPISODES_PLAYLIST_URL = "https://www.youtube.com/@condominiando/str
 export type Episode = {
   id: string;
   title: string;
-  /** Rótulo curto, ex.: "Episódio 029/2026". */
+  /** Rótulo curto, ex.: "Episódio 079/2026". */
   label: string;
+  /** Número do episódio, ex.: "079". */
+  number?: string;
+  /** Temporada, quando o título informa ("TEMPORADA 2"). */
+  season?: number;
   /** ISO 8601 */
   published: string;
 };
@@ -35,7 +39,7 @@ export async function getEpisodes(): Promise<Episode[]> {
     const xml = await res.text();
 
     const seen = new Set<string>();
-    return xml
+    const episodes: Episode[] = xml
       .split("<entry>")
       .slice(1)
       .flatMap((entry) => {
@@ -49,8 +53,11 @@ export async function getEpisodes(): Promise<Episode[]> {
         // Live reenviada com o mesmo número: fica só a mais recente.
         if (seen.has(label)) return [];
         seen.add(label);
-        return [{ id, title: clean, label, published }];
+        const season = Number(clean.match(/TEMPORADA\s*(\d+)/i)?.[1]) || undefined;
+        return [{ id, title: clean, label, number: num?.split("/")[0], season, published }];
       });
+    // Mais recente primeiro, independente da ordem do feed.
+    return episodes.sort((a, b) => b.published.localeCompare(a.published));
   } catch {
     return [];
   }

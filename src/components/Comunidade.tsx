@@ -63,7 +63,7 @@ export default function Comunidade() {
   return (
     <section
       ref={sectionRef}
-      className="relative py-24 sm:py-32"
+      className="relative py-16 sm:py-20"
       style={{ background: "linear-gradient(180deg, #0D5BA8 0%, #0A4F99 50%, #0D5BA8 100%)" }}
     >
       <div className="absolute inset-0 noise-overlay" />
