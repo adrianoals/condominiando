@@ -13,7 +13,6 @@ type Apoiador = {
   /**
    * Logo claro sobre fundo preto: inverte o brilho mantendo o tom das cores
    * (invert + hue-rotate) para caber no card branco.
-   * TODO: trocar pela versão em fundo branco quando o Rafael enviar.
    */
   invert?: boolean;
 };
@@ -35,8 +34,10 @@ const apoiadores: Apoiador[] = [
   { name: "Local Novo Imóveis", logo: "/images/apoiadores/local-novo-imoveis.jpg", href: "https://www.localnovoimoveis.com.br/", invert: true },
 ];
 
-// TODO: trocar pelo WhatsApp do marketing (wa.me/55...) quando o Rafael enviar o número
-const CONTATO_URL = "https://whatsapp.com/channel/0029Vb6i8ebFi8xhrvh0yd1d";
+// WhatsApp do marketing, com mensagem já preenchida.
+const CONTATO_URL = `https://wa.me/5511985144875?text=${encodeURIComponent(
+  "Olá! Tenho interesse em ser apoiador do Condominiando."
+)}`;
 
 export default function Apoiadores() {
   const sectionRef = useRef<HTMLElement>(null);

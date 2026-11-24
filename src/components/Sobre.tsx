@@ -16,7 +16,7 @@ const platforms = [
     icon: StreamIcon,
     name: "RedFox Play",
     desc: "Streaming ao vivo pela plataforma digital",
-    // TODO: link do app RedFox Play (pedir ao Rafael)
+    href: "https://redfoxtelecom.com.br/redfoxtv",
     color: "from-red-500/15 to-blue-mid/10",
   },
   {
