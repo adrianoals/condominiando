@@ -85,15 +85,9 @@ export default function Footer() {
         </div>
 
         {/* Bottom bar */}
-        <div className="mt-12 pt-8 border-t border-ice/5 flex flex-col sm:flex-row items-center justify-between gap-3">
+        <div className="mt-12 pt-8 border-t border-ice/5 flex flex-col sm:flex-row items-center justify-center gap-3">
           <p className="text-ice/30 text-xs font-light tracking-wide">
             © 2026 Condominiando com Rafael Zanin. Todos os direitos reservados.
-          </p>
-          <p className="text-ice/30 text-xs font-light tracking-wide">
-            Desenvolvido por{" "}
-            <a href="https://xnap.com.br/" target="_blank" rel="noopener noreferrer" className="text-ice/50 hover:text-gold transition-colors duration-300">
-              XNAP
-            </a>
           </p>
         </div>
       </div>
