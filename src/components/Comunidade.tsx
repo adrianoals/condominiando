@@ -10,7 +10,7 @@ const communities = [
     name: "YouTube",
     handle: "@condominiando",
     desc: "Inscreva-se e acompanhe todos os episódios",
-    href: "https://www.youtube.com/@condominiando",
+    href: "https://www.youtube.com/@condominiando/streams",
     accent: "hover:border-red-500/40",
     iconBg: "from-red-500/20 to-red-700/10",
     iconColor: "text-red-400 group-hover:text-red-300",

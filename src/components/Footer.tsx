@@ -9,7 +9,7 @@ const quickLinks = [
 ];
 
 const socialLinks = [
-  { icon: YouTubeIcon, href: "https://www.youtube.com/@condominiando", label: "YouTube" },
+  { icon: YouTubeIcon, href: "https://www.youtube.com/@condominiando/streams", label: "YouTube" },
   { icon: InstagramIcon, href: "https://www.instagram.com/programacondominiando", label: "Instagram" },
   { icon: WhatsAppIcon, href: "https://whatsapp.com/channel/0029Vb6i8ebFi8xhrvh0yd1d", label: "WhatsApp" },
 ];

@@ -2,14 +2,14 @@
 
 import { useEffect, useRef, useState } from "react";
 import SectionTitle from "./SectionTitle";
-import { TvIcon, StreamIcon, YouTubeIcon } from "./Icons";
+import { TvIcon, StreamIcon, YouTubeIcon, SpotifyIcon } from "./Icons";
 
 const platforms = [
   {
     icon: TvIcon,
     name: "Nova TV Alto Tietê",
     desc: "Canal aberto na região do Alto Tietê",
-    href: "https://www.youtube.com/playlist?list=PL8pGApzVLHk7b82Abgqo_5jmSlrq5ziF2",
+    href: "https://www.youtube.com/@condominiando/streams",
     color: "from-blue-light/20 to-blue-mid/10",
   },
   {
@@ -23,8 +23,15 @@ const platforms = [
     icon: YouTubeIcon,
     name: "YouTube",
     desc: "Assista quando e onde quiser",
-    href: "https://www.youtube.com/@condominiando",
+    href: "https://www.youtube.com/@condominiando/streams",
     color: "from-red-500/15 to-blue-mid/10",
+  },
+  {
+    icon: SpotifyIcon,
+    name: "Spotify",
+    desc: "Ouça os episódios onde estiver",
+    href: "https://open.spotify.com/show/1QgGqT9ymCM0Pr6R9GRul2",
+    color: "from-green-500/15 to-blue-mid/10",
   },
 ];
 
@@ -66,12 +73,14 @@ export default function Sobre() {
             Transmitido ao vivo toda segunda-feira às 20h pela{" "}
             <span className="text-gold font-semibold">Nova TV Alto Tietê</span> e pela plataforma{" "}
             <span className="text-gold font-semibold">RedFox Play</span>, o Condominiando também está
-            disponível no YouTube para quem quiser assistir quando e onde quiser.
+            disponível no <span className="text-gold font-semibold">YouTube</span> e no{" "}
+            <span className="text-gold font-semibold">Spotify</span> para quem quiser assistir ou ouvir
+            quando e onde quiser.
           </p>
         </div>
 
         {/* Platform Cards */}
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-4xl mx-auto">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {platforms.map((platform, i) => {
             const Wrapper = platform.href ? "a" : "div";
             const wrapperProps = platform.href

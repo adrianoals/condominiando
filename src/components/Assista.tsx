@@ -156,7 +156,7 @@ export default function Assista({ episodes }: { episodes: Episode[] }) {
         {/* CTAs */}
         <div className={`flex flex-col sm:flex-row items-center justify-center gap-4 mt-12 transition-all duration-1000 delay-500 ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}>
           <a
-            href="https://www.youtube.com/@condominiando?sub_confirmation=1"
+            href="https://www.youtube.com/@condominiando/streams"
             target="_blank"
             rel="noopener noreferrer"
             className="btn-gold inline-flex items-center gap-2.5 px-8 py-3.5 rounded-full text-base"
