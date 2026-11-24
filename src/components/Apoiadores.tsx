@@ -19,20 +19,20 @@ type Apoiador = {
 };
 
 const apoiadores: Apoiador[] = [
-  { name: "Superlógica", logo: "/images/apoiadores/superlogica.jpg" },
-  { name: "Eletromidia", logo: "/images/apoiadores/eletromidia.jpg" },
-  { name: "Aprescond – Associação de Prestadores Condominiais", logo: "/images/apoiadores/aprescond.jpg" },
-  { name: "Villa Nova Assessoria Condominial", logo: "/images/apoiadores/villa-nova.jpg" },
-  { name: "Leitura Nova – Medição de Gás e Água", logo: "/images/apoiadores/leitura-nova.jpg" },
-  { name: "Santa Inês – Equipamentos contra Incêndio", logo: "/images/apoiadores/santa-ines.jpg" },
-  { name: "Marshals Segurança", logo: "/images/apoiadores/marshals-seguranca.jpg" },
-  { name: "LD Tech", logo: "/images/apoiadores/ld-tech.jpg" },
-  { name: "Kadiv", logo: "/images/apoiadores/kadiv.jpg" },
-  { name: "Grupo DL Green", logo: "/images/apoiadores/dl-green.jpg" },
-  { name: "Talent Marcas & Patentes", logo: "/images/apoiadores/talent-marcas-patentes.jpg" },
-  { name: "RedFox", logo: "/images/apoiadores/redfox.jpg" },
-  { name: "Sorteio Novo", logo: "/images/apoiadores/sorteio-novo.jpg" },
-  { name: "Local Novo Imóveis", logo: "/images/apoiadores/local-novo-imoveis.jpg", invert: true },
+  { name: "Superlógica", logo: "/images/apoiadores/superlogica.jpg", href: "https://superlogica.com/" },
+  { name: "Eletromidia", logo: "/images/apoiadores/eletromidia.jpg", href: "https://eletromidia.com.br/" },
+  { name: "Aprescond – Associação de Prestadores Condominiais", logo: "/images/apoiadores/aprescond.jpg", href: "https://aprescond.com.br/" },
+  { name: "Villa Nova Assessoria Condominial", logo: "/images/apoiadores/villa-nova.jpg", href: "https://villanovacondominios.com.br/" },
+  { name: "Leitura Nova – Medição de Gás e Água", logo: "/images/apoiadores/leitura-nova.jpg", href: "https://www.leituranova.com.br/" },
+  { name: "Santa Inês – Equipamentos contra Incêndio", logo: "/images/apoiadores/santa-ines.jpg", href: "https://santainesextintores.com.br/" },
+  { name: "Marshals Segurança", logo: "/images/apoiadores/marshals-seguranca.jpg", href: "https://marshalsseg.com.br/" },
+  { name: "LD Tech", logo: "/images/apoiadores/ld-tech.jpg", href: "https://ldtechbrasil.com.br/" },
+  { name: "Kadiv", logo: "/images/apoiadores/kadiv.jpg", href: "https://kadiv.com.br/" },
+  { name: "Grupo DL Green", logo: "/images/apoiadores/dl-green.jpg", href: "https://dlgreen.com.br/" },
+  { name: "Talent Marcas & Patentes", logo: "/images/apoiadores/talent-marcas-patentes.jpg", href: "https://www.talentpi.com.br/" },
+  { name: "RedFox", logo: "/images/apoiadores/redfox.jpg", href: "https://redfoxtelecom.com.br/" },
+  { name: "Sorteio Novo", logo: "/images/apoiadores/sorteio-novo.jpg", href: "https://www.sorteionovo.com.br/" },
+  { name: "Local Novo Imóveis", logo: "/images/apoiadores/local-novo-imoveis.jpg", href: "https://www.localnovoimoveis.com.br/", invert: true },
 ];
 
 // TODO: trocar pelo WhatsApp do marketing (wa.me/55...) quando o Rafael enviar o número
