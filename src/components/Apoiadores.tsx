@@ -30,7 +30,7 @@ const apoiadores: Apoiador[] = [
   { name: "Grupo DL Green", logo: "/images/apoiadores/dl-green.jpg", href: "https://dlgreen.com.br/" },
   { name: "Talent Marcas & Patentes", logo: "/images/apoiadores/talent-marcas-patentes.jpg", href: "https://www.talentpi.com.br/" },
   { name: "RedFox", logo: "/images/apoiadores/redfox.jpg", href: "https://redfoxtelecom.com.br/" },
-  { name: "Sorteio Novo", logo: "/images/apoiadores/sorteio-novo.jpg", href: "https://www.sorteionovo.com.br/" },
+  { name: "Sorteio Novo – Sorteio de Vagas de Garagem", logo: "/images/apoiadores/sorteio-novo.jpg", href: "https://www.sorteionovo.com.br/" },
   { name: "Local Novo Imóveis", logo: "/images/apoiadores/local-novo-imoveis.jpg", href: "https://www.localnovoimoveis.com.br/", invert: true },
 ];
 
